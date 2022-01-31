@@ -1,0 +1,16 @@
+.banner {
+  height: 100vh;
+  background-image: url(/assets/bannerImages/bannerImage2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+.centerize {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 95vh;
+  width: 100%;
+}
