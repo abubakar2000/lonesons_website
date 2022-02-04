@@ -11,12 +11,13 @@
   justify-content: center;
 }
 .SiteBrand {
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: xx-large;
   font-weight: bolder;
   align-items: center;
   display: flex;
   justify-content: center;
+  color: white;
 }
 .navbarLinksDiv {
   display: flex;
@@ -30,10 +31,11 @@
   transition: 1s;
   cursor: pointer;
   margin: 1%;
+  color: white;
 }
 .navBatItems:hover {
   transition: 0.2s;
-  color: gray;
+  color: rgb(255, 187, 0);
 }
 .navBatItemsButton {
   transition: 1s;
@@ -46,13 +48,14 @@
 
   color: white;
   cursor: pointer;
-  box-shadow: 1px 1px 20px gray;
+  border: 2px solid orange;
+  border-radius: 5pt;
+
 }
 .navBatItemsButton:hover {
-  transition: 1s;
-  background-color: rgb(120, 159, 233);
-  color: black;
-  box-shadow: 1px 1px 20px gray;
+  transition: 0.2s;
+  /* background-color: rgb(49, 83, 146); */
+  color: orange;
 }
 
 /* for screens lower than 1200px */
