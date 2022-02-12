@@ -7,7 +7,7 @@ import { NewsComponent } from './View/news/news.component';
 import { ServicesComponent } from './View/services/services.component';
 
 const routes: Routes = [
-  { path: '', component: LandingPageComponent, pathMatch:"full" },
+  { path: '', component: LandingPageComponent, pathMatch: "full" },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'news', component: NewsComponent },
@@ -15,7 +15,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
