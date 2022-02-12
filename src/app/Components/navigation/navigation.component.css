@@ -1,4 +1,26 @@
 .navItem {
-    padding: 5pt;
-    margin: 5pt;
+  padding: 5pt;
+  margin: 5pt;
+}
+.navLink {
+  padding: 5pt;
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+  border-bottom: 4px solid transparent;
+}
+.navLink:hover {
+  color: orange;
+  text-decoration: none;
+  border-bottom: 4px solid orange;
+}
+
+.navLinkActive {
+  padding: 5pt;
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+  color: orange;
+  text-decoration: none;
+  border-bottom: 4px solid orange;
 }
