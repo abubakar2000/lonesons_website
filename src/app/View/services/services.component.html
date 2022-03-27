@@ -8,64 +8,71 @@ background-position: right;background-attachment: fixed;">
             <div class="row">
                 <div class="col-md-7">
                     <div style="font-size: 4vh;border-bottom: 2px solid orange;
-                    padding-bottom: 2vh;color: orange;">Our
+                    padding-bottom: 2vh;color: orange;font-weight: bold;">Our
                         Services</div>
                     <div style="font-size: 3vh;padding-top: 2vh;">We value your time and money</div>
+                    <button style="margin-top: 3vh;font-size: larger;" class="btn btn-outline-warning text-light"
+                        (click)="scroll()">
+                        Learn More
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+    <div style="background-color: white;color: gray; border-top: 10pt solid lightblue;text-align: center;
+    display: flex;justify-content: center;padding-bottom: 5vh;">
+        <div style="padding: 30pt;font-size: xx-large;width: fit-content;
+    border-bottom: 1px solid gray;">Our services range from <b style="color: black;">Sea Freight</b> to <b
+                style="color: black;">Air Freight</b></div>
+    </div>
+    <div style="background-color: white;padding-top: 5vh;
+    text-align: center;padding-bottom: 5vh;color: black;;">
+        <h1 style="font-weight: bold;"><i>SERVICES NETWORK</i></h1>
+        <div style="font-size: xx-large;font-style: italic;
+        color: gray;">Networking the community for maximum impact</div>
+        <div style="margin-top: 2vh;font-size: larger;font-style: italic;text-align: start;" class="container">
+            <div style="margin-bottom: 1vh;">
+                We offer cargo consolidation by Air or Sea for our customers with excellent logistics support and
+                transportation services, we offer customized cargo consolidation services with the most professional
+                manner
+            </div>
+            <div style="margin-bottom: 1vh;">
+                We render personalized cargo packages as per the requirements of the clients.
+            </div>
+            <div style="margin-bottom: 1vh;">
+                We make sure that the cardo reaches the respective destination well before the specified time.
+            </div>
+        </div>
+    </div>
+
     <div
         style="padding-top: 5vh;padding-bottom:5vh;background-color: white;color: black;display: flex;align-items: center;flex-direction: column;">
-        <h3 style="margin-bottom: 3vh;color: orange;">We Offer</h3>
-        <!-- <div class="container" style="display: flex;flex-direction: column;width: 100%;">
-            <div style="display: flex;align-items: center;justify-content: space-evenly;">
-                <div class="serviceItem">
-                    <div style="font-size: large;font-weight: bold;">Contract Logistics</div>
-                    <div>Content</div>
-                </div>
-                <div class="serviceItem">
-                    <div style="font-size: large;font-weight: bold;">Overland, Ocean and Air freight</div>
-                    <div>Content</div>
-                </div>
-            </div>
-            <div style="display: flex;align-items: center;justify-content: space-evenly;">
-                <div class="serviceItem">
-                    <div style="font-size: large;font-weight: bold;">Warehouse and Storage</div>
-                    <div>Content</div>
-                </div>
-                <div class="serviceItem">
-                    <div style="font-size: large;font-weight: bold;">Consulting Service</div>
-                    <div>Content</div>
-                </div>
-            </div>
-        </div> -->
+        <h3 style="margin-bottom: 3vh;color: gray;">
+            <div style="display: inline;font-size: xx-large;color: orange;">We Offer</div> services worldwide in
+        </h3>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div *ngFor="let item of services" class="col-md-6">
                     <div class="serviceItem">
-                        <div style="font-size: large;font-weight: bold;">Contract Logistics</div>
-                        <div>Content</div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="serviceItem">
-                        <div style="font-size: large;font-weight: bold;">Overland, Ocean and Air freight</div>
+                        <div style="font-size: large;font-weight: bold;">{{item.title}}</div>
                         <div>Content</div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div style="text-align: center;padding-top: 5vh;padding-bottom: 5vh;">
+        <h1>Supply chain execution</h1>
+        <br>
+        <br>
+        <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="serviceItem">
-                        <div style="font-size: large;font-weight: bold;">Warehouse and Storage</div>
-                        <div>Content</div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="serviceItem">
-                        <div style="font-size: large;font-weight: bold;">Consulting Service</div>
-                        <div>Content</div>
+                <div *ngFor="let item of supplyChainExecution" style="padding: 10pt;" class="col-md-3">
+                    <div style="width: 100%;padding-top: 2vh;padding-bottom:2vh;
+                    background-color: rgba(0, 0, 0, 0.548);color: white;height: 100%;
+                    min-height: 20vh;border-radius: 10pt;padding: 30pt;
+                    display: flex;align-items: center;justify-content: center;">
+                        <h3>{{item.title}}</h3>
                     </div>
                 </div>
             </div>

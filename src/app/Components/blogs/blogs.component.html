@@ -1,0 +1,28 @@
+<div style="background-color: white;padding-top: 5vh;padding-bottom: 5vh;">
+    <div class="container" style="text-align: center;">
+        <h2><i>News and Events</i></h2>
+        <br>
+        <div class="row"
+            style="display: flex;flex-direction: row;flex-wrap: wrap;align-items: center;justify-content: center;">
+            <div *ngFor="let item of newsandevents" class="col-md-3" style="padding: 10pt;">
+                <div style="width: 100%;background-color: white;
+                ">
+                    <div style="display: flex;flex-direction: column;justify-content: space-between;align-items: center;
+                    min-height: 30vh;border: 1px solid rgb(200,200,200);border-radius: 10pt;padding-bottom: 2vh;">
+                        <div>
+                            
+                        </div>
+                        <div>
+                            <div>
+                                {{item.title}}
+                            </div>
+                            <div>
+                                {{item.desc}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
