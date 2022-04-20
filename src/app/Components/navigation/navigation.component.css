@@ -1,10 +1,10 @@
 .navItem {
   padding: 5pt;
   margin: 5pt;
+  
 }
 .navLink {
   padding: 5pt;
-  color: white;
   text-decoration: none;
   transition: 0.4s;
   border-bottom: 4px solid transparent;
@@ -17,7 +17,6 @@
 
 .navLinkActive {
   padding: 5pt;
-  color: white;
   text-decoration: none;
   color: orange;
   text-decoration: none;

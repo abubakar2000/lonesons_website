@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', component: LandingPageComponent, pathMatch: "full" },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'news', component: NewsComponent },
+  // { path: 'news', component: NewsComponent },
   { path: 'services', component: ServicesComponent },
 ];
 

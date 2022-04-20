@@ -10,7 +10,6 @@ export class AboutUsComponent implements OnInit {
     {
       name:'Nadeem Khalid Lone',
       designation:'CEO',
-      email:'abubakarmughal2k@gmail.com',
       image:'assets/img/gallery/team1.png',
     },
     {
