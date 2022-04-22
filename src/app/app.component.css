@@ -1,0 +1,24 @@
+.aboutSiteClass {
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    width: 250pt;
+    background-color: rgb(236, 236, 236);
+    left: 0;
+    padding-top: 30pt;
+    padding-bottom: 30pt;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inlineContent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}

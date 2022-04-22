@@ -12,4 +12,11 @@ export class SiteIdentityComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  Toggle() {
+    if (document.getElementById('aboutSiteDrawe')?.getAttribute('style') !== "transform: translateX(-100%);transition:1s") {
+      document.getElementById('aboutSiteDrawe')?.setAttribute('style', "transform: translateX(-100%);transition:1s")
+    } else {
+      document.getElementById('aboutSiteDrawe')?.setAttribute('style', "transform: translateX(0%);transition:1s")
+    }
+  }
 }
